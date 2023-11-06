@@ -1,10 +1,25 @@
-import { add as tasu,subtract,multiply as kake,divide } from "./mathFunctions.js";
+// import { add as tasu, subtract, multiply as mult, divide } from "./mathFunctions.js";
 
-const num1 = 10;
-const num2 = 5;
+// const a = 10;
+// const b = 5;
 
-// console.log("足し算：",add(num1,num2));
-console.log("足し算：",tasu(num1,num2));
-console.log("引き算：",subtract(num1,num2));
-console.log("掛け算：",kake(num1,num2));
-console.log("割り算：",divide(num1,num2));
+// console.log("足し算：", tasu(a, b));
+// console.log("引き算：", subtract(a, b));
+// console.log("掛け算：", mult(a, b));
+// console.log("割り算：", divide(a, b));
+class Human {
+    constructor() {
+        this.name = "sasaki";
+    }
+    hello() {
+        console.log("kkkkkk");
+    }
+}
+new Human.hello();
+const result = document.getElementById("result");
+const btn = document.getElementById("btn");
+
+
+btn.addEventListener("click", () => {
+    console.log(result.innerText);
+});
